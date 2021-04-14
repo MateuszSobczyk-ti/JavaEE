@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/userauth" 
+		auth="Container" 
+		type="javax.sql.DataSource" 
+		initialSize="5" 
+		maxTotal="20"
+		username="root" 
+		password="krokiew12" 
+		driverClassName="com.mysql.cj.jdbc.Driver" 
+		url="jdbc:mysql://localhost:3306/userauth?useSSL=false&amp;serverTimezone=UTC" />
+	<Realm className="org.apache.catalina.realm.DataSourceRealm" 
+		dataSourceName="jdbc/userauth"
+		userTable="user" 
+		userNameCol="user_name" 
+		userCredCol="password"
+		userRoleTable="user_role"
+		roleNameCol="role_name"
+		localDataSource="true">
+		<CredentialHandler className="org.apache.catalina.realm.MessageDigestCredentialHandler" algorithm="sha-256" />
+		</Realm>
+		/>
+</Context>
