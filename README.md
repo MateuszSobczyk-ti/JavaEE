@@ -1,6 +1,6 @@
 # JavaEE
 This is web application that was written using java enterprise edition. In this simple application you can add/look over comments as user or add/edit/delete/look over users
-as a admin. This project was created on IT labs. Hope images explains how webapp works.
+as an admin. This project was created on IT labs. Hope images explains how webapp works.
 
 ## Technologies
 - Java 14.0.1
